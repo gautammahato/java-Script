@@ -1,0 +1,47 @@
+Problem 1-  Write a java script program to generate a random number add store it a variable
+            The program then takes an input form the user to tell them whether the guess aws 
+            correct greater or smaller than the original number.
+
+
+// solution :  
+
+let a = Math.random() * 100;
+a = Number.parseInt(a)
+let inp;
+let score = 100;
+while (inp != a){
+  score = score -1;
+  inp = prompt("Enter the Number");
+  if (inp == a) {
+    console.log("Congratulation ! You have guess the correct Number");
+    console.log(`You guesws the actual number in ${100 - score} chances.`)
+  }
+  else if (inp > a && inp < 100 ){
+    console.log("Your Number is bigger than the actual Number")
+    
+  }
+  else if (inp < a && inp > 0){
+    console.log("YOur Number is smaller than the actual Number")
+  }
+  else {
+    console.log("Enter the Number between 1 to 100")
+  }
+}
+
+
+outPut -   
+
+
+Enter the Number> 56
+YOur Number is smaller than the actual Number
+Enter the Number> 85
+Your Number is bigger than the actual Number
+Enter the Number> 75
+Your Number is bigger than the actual Number
+Enter the Number> 65
+Your Number is bigger than the actual Number
+Enter the Number> 64
+Your Number is bigger than the actual Number
+Enter the Number> 63
+Congratulation ! You have guess the correct Number
+You guesws the actual number in 6 chances.
