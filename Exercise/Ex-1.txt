@@ -1,4 +1,4 @@
-Problem 1-  Write a java script program to generate a random number add store it a variable
+task  1-  Write a java script program to generate a random number add store it a variable
             The program then takes an input form the user to tell them whether the guess aws 
             correct greater or smaller than the original number.
 
