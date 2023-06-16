@@ -66,4 +66,55 @@ Note - childNodes look like an array but it not actually an array but a collecti
 for example- <head> and <body> are sibling.
 
 
+
+
+
+>>>>> matches, closet and contains method <<<<<<<<
+- there are three important method to search the DOM 
+
+1.  elem.matches(css) ---> To check if elements matches the given css selector.
+*/ 
+
+let id1 = document.getElementById("id1")
+console.log(id1)
+console.log(id1.matches(".box"))
+
+
+/*
+
+2. elem.closet(css) --> To look for the nearest ancestor taht match the givencss selector tahe elem 
+   itself is also checked.
 */
+   console.log(sp1.closet(".box"))
+
+
+
+   /*
+3. elemA.contains(elemB) ---> Return true if elemB is inside elemA (a descedant of elem A) 
+   or when elem A ==elemB
+   */
+
+   
+let sp1 = document.getElementById("sp1")
+console.log(id1)
+console.log(sp1.closet("#sp1"))
+console.log(id1.contains(sp1))
+console.log(sp1.contains(sp1))
+console.log(sp1.contains(id1))
+
+
+//>>>>>>> Practice -07 <<<<<<<<<
+
+// Q-1 create a navbar and change it color of its first elements to red.
+
+// index.html
+
+
+
+// Q-2 crate a table without t body Now use "view page source" botton to check whether it has a t body or not .
+
+
+//Q-3 create an elements with 3 children now change the color of first and last element to green 
+
+//Q-4 write a java script code to cahnge backgroud of all <li> tag to cyan color
+

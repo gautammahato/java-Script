@@ -1,5 +1,5 @@
 task  1-  Write a java script program to generate a random number add store it a variable
-            The program then takes an input form the user to tell them whether the guess aws 
+            The program then takes an input form the user to tell them whether the guess 
             correct greater or smaller than the original number.
 
 
