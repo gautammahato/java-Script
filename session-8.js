@@ -83,4 +83,26 @@ first.outerHTML
 */
 
 
+/* >>>>>>>>>>>>>>>> Insertion Method <<<<<<<<<<<<<<< 
 
+append
+prepend
+before
+after
+replaceWith
+
+
+How to work Insert AdjacentHTML, Insert AdjacentElement and Insert AdjacentText
+
+
+1. beforebegin   -  Insert HTML immediatily before element.
+2. afterbegin    -  Insert HTML into element at the begining 
+3. beforeend     -  Insert HTML into element at the end
+4. aftereend     -  Insert HTML immediatily after element.
+
+
+
+
+
+
+*/
