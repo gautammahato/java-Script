@@ -1,0 +1,25 @@
+html {
+    height: 100%;
+    width: 100%;
+}
+  
+* {
+    padding: 0px;
+    margin: 0px;
+  
+  
+}
+  
+.yellow {
+    background-color: yellow;
+    color: #fff;
+}
+  
+.red {
+    background-color: red;
+    color: #fff;
+}
+  
+.text-dark {
+    color: black;
+}
