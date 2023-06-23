@@ -1,0 +1,148 @@
+1. Write a program to show different alert when different button are clicked.
+
+
+<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>replit</title>
+  
+</head>
+
+<body>
+  <div>
+    <h1>Hello World!</h1>
+  </div>
+
+  <button onclick="alert('Hello World!')">Check Me</button>
+  <button onclick="alert('I am Aws Solution Architect ')">Info</button>
+  <button onclick="alert('Share with me your profession ')">Intraction</button>
+
+</body>
+</html>
+<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+
+
+
+
+2. Create a website which is capable of storing bookmarks of your favorite website using href.
+
+<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>replit</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+
+  <!-- from index.html -->
+  <h1>bookmarks</h1>
+  <a href="https://google.com"><button id="google">Google</button></a>
+  <a href="https://facebook.com"><button id="fb">facebook</button></a>
+  <a href="https://twitter.com"><button id="twitter">Twitter</button></a>
+  
+</body>
+</html>
+<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+
+
+
+
+3.  Do the question number 2 with event listener.
+index.html
+<<<<<<<<<<<<<<<<<<<<<<<<<<<<>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>replit</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+<h1>Bookmark<h1>
+  <!-- with js script  -->
+  <button id="google">Google</button>
+  <button id="fb">Facebook</button>
+  <button id="twitter">twitter</button>
+
+
+  <script src="script.js"></script>
+  <script src="https://replit.com/public/js/replit-badge-v2.js" theme="dark" position="bottom-right"></script>
+</body>
+</html>
+<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+script.js
+document.getElementById("google").addEventListener("click", function(){
+  window.location = "https://www.google.com";
+  win.focus();
+    
+})
+document.getElementById("fb").addEventListener("click", function(){
+  window.location = "https://www.facebook.com";
+  win.focus();
+    
+})
+document.getElementById("twitter").addEventListener("click", function(){
+  window.location = "https://www.twitter.com";
+  win.focus();
+    
+})
+
+
+
+
+4. Write a java script program to keep fetching contents of a website (every 3 second)
+<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+index.html
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>replit</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+  <div>
+    <h1>Hello World!</h1>
+  </div>
+
+  <!-- with js script  -->
+  <button id="google">Google</button>
+  <button id="fb">Facebook</button>
+  <button id="twitter">twitter</button>
+
+
+  <script src="script.js"></script>
+
+  <script src="https://replit.com/public/js/replit-badge-v2.js" theme="dark" position="bottom-right"></script>
+</body>
+</html>
+<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+script.js
+
+const fetchContent = async (url) =>{
+  con = await fetch(url)
+  let a = await con.json()
+  return a;
+}
+setInterval(async function(){
+  let url = "https://jsonplaceholder.typicode.com/todos/1"
+  console.log(await fetchContent(url))
+  
+},3000)

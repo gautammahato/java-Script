@@ -55,3 +55,14 @@ setInterval(function(){
     alert("This is setInterval")
   },3000)
   
+
+
+
+
+
+// Browser Event
+let a = document.getElementsByClassName("container")[0]
+a.onclick = ()=>{
+  let b = document.getElementsByClassName("container")[0]
+  b.innerHTML = "Hello World ! This is browser Event"
+}
